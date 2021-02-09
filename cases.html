@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utilities.css">
+  <title>AutoHarvest Cases</title>
+</head>
+
+<body id="home">
+  <header class="hero cases">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary">Auto</span>Harvest
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="cases.html">CASES</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="home" class="content">
+      <h1>Cases</h1>
+    </div>
+  </header>
+  <main>
+    <!--ABOUT : client  -->
+    <section id="about" class="client flex-columns border1">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/home page pic.jpg" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-primary italic">
+            <h2>User Review 1</h2>
+            <h4>"WITH ROBOTS, LIKE AUTOHARVEST, WE USE LESS ENERGY, GET A BETTER OVERVIEW OF PRODUCTION, USE LESS
+              PESTICIDES AND SAVE MORE LABOUR WHILE WE TAKE BETTER CARE OF THE SOIL WHICH AGAIN GIVE BIGGER CROPS."</h4>
+            <p>Simen Myhrene, Strawberry farmer and user of AutoHarvest's services</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="client flex-columns border1 flex-reverse">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/user2.jpg" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-secondary italic">
+            <h2>User Review 2</h2>
+            <h4>"WITH ROBOTS, LIKE AUTOHARVEST, WE USE LESS ENERGY, GET A BETTER OVERVIEW OF PRODUCTION, USE LESS
+              PESTICIDES AND SAVE MORE LABOUR WHILE WE TAKE BETTER CARE OF THE SOIL WHICH AGAIN GIVE BIGGER CROPS."</h4>
+            <p>Simen Myhrene, Strawberry farmer and user of AutoHarvest's services</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cases -->
+    <section id="cases" class="cases flex-grid section-padding bg-dark border1">
+      <header class="section-header">
+        <h1>OUR CLIENTS</h1>
+        <p>The AutoHarvest platform is not sold commercially as a product, but we do sell robots to universities and
+          research institutions for use in research projects. You will need some technological knowledge in order to use
+          the robot. Please see this page for more technical information about the robot.</p>
+      </header>
+      <div class="row">
+        <div class="column bg-light">
+          <img src="images/university logo 1.png" alt="">
+        </div>
+        <div class="column bg-light">
+          <img src="images/university logo 2.png" alt="">
+        </div>
+        <div class="column bg-light">
+          <img src="images/university logo 3.png" alt="">
+        </div>
+        <div class="column bg-light">
+          <img src="images/university logo 4.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column bg-light">
+          <img src="images/university logo 5.png" alt="">
+        </div>
+        <div class="column bg-light">
+          <img src="images/university logo 8.png" alt="">
+        </div>
+        <div class="column bg-light">
+          <img src="images/university logo 7.png" alt="">
+        </div>
+        <div class="column bg-light">
+          <img src="images/university logo 6.png" alt="">
+        </div>
+      </div>
+      <div class="section-btn">
+        <a href="cases.html" class="btn btn-outline">Read More</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer bg-secondary border1">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2020 - AutoHarvest</p>
+  </footer>
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+  </script>
+</body>
+
+</html>

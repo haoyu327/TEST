@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utilities.css">
+  <title>About AutoHarvest</title>
+</head>
+
+<body id="home">
+  <header class="hero contact">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary">Auto</span>Harvest
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="cases.html">CASES</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="home" class="content">
+      <h1>Contact</h1>
+    </div>
+  </header>
+  <main>
+    <!-- CONTACT -->
+    <section id="contact" class="contact contact-section border1">
+      <h1>Contact Us</h1>
+      <div class="contact-border"></div>
+      <form class="contact-form" action="index.html" method="post">
+        <input type="text" class="contact-form-text" placeholder="Name">
+        <input type="email" class="contact-form-text" placeholder="Email address">
+        <input type="phone" class="contact-form-text" placeholder="Phone">
+        <textarea class="contact-form-text" placeholder="Message"></textarea>
+        <input type="submit" value="Send" id="submit" class="btn contact-btn">
+      </form>
+    </section>
+  </main>
+  <footer class="footer bg-secondary border1">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2020 - AutoHarvest</p>
+  </footer>
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+  </script>
+</body>
+
+</html>
