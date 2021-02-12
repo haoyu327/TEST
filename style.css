@@ -91,7 +91,7 @@ img {
 }
 /* header */
 .hero {
-  background: url('/images/landing photo.jpg') no-repeat center center/cover;
+  background: url('images/landing photo.jpg') no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: #ffffff;
@@ -132,25 +132,25 @@ img {
 }
 
 .hero.blog {
-  background: url('/images/aboutpagepic .jpg') no-repeat center center/cover;
+  background: url('images/aboutpagepic .jpg') no-repeat center center/cover;
   height: 50vh;
   position: relative;
   color: #ffffff;
 }
 .hero.cases {
-  background: url('/images/casespagepic .jpg') no-repeat center center/cover;
+  background: url('images/casespagepic .jpg') no-repeat center center/cover;
   height: 50vh;
   position: relative;
   color: #ffffff;
 }
 .hero.service {
-  background: url('/images/servicepagepic.jpg') no-repeat center center/cover;
+  background: url('images/servicepagepic.jpg') no-repeat center center/cover;
   height: 50vh;
   position: relative;
   color: #ffffff;
 }
 .hero.contact {
-  background: url('/images/contactpagepic.jpg') no-repeat center center/cover;
+  background: url('images/contactpagepic.jpg') no-repeat center center/cover;
   height: 50vh;
   position: relative;
   color: #ffffff;
@@ -212,7 +212,7 @@ img {
 
 /* contact form */
 .contact-section {
-  background: url('/images/CONTACT\ BACKGROUND.jpg') no-repeat center
+  background: url('images/CONTACT\ BACKGROUND.jpg') no-repeat center
     center/cover;
   padding: 40px 0;
 }
